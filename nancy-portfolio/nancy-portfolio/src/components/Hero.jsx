@@ -68,7 +68,8 @@ export default function Hero() {
             </a>
             <a
               href={`${import.meta.env.BASE_URL}Resume/Nancy.pdf`}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-ghost cursor-hover"
             >
               <Download size={16} /> Download Resume
