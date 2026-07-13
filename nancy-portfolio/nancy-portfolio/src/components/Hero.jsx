@@ -66,8 +66,12 @@ export default function Hero() {
             >
               View Projects
             </a>
-            <a href={`${import.meta.env.BASE_URL}Resume/Nancy.pdf`} download>
-              Download Resume
+            <a
+              href={`${import.meta.env.BASE_URL}Resume/Nancy.pdf`}
+              download
+              className="btn btn-ghost cursor-hover"
+            >
+              <Download size={16} /> Download Resume
             </a>
             <a
               href="#contact"
