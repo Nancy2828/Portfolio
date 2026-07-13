@@ -9,7 +9,7 @@ const CODE_LINES = [
   { indent: 1, content: [{ t: 'prop', v: 'role' }, { t: 'op', v: ':' }, { t: 'str', v: " 'Frontend Developer'" }, { t: 'op', v: ',' }] },
   { indent: 1, content: [{ t: 'prop', v: 'stack' }, { t: 'op', v: ':' }, { t: 'plain', v: ' [' }, { t: 'str', v: "'React'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'JavaScript'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'ASP.NET Core'" }, { t: 'plain', v: '],' }] },
   { indent: 1, content: [{ t: 'prop', v: 'basedIn' }, { t: 'op', v: ':' }, { t: 'str', v: " 'Coimbatore, IN'" }, { t: 'op', v: ',' }] },
-  { indent: 1, content: [{ t: 'prop', v: 'available' }, { t: 'op', v: ':' }, { t: 'kw', v: ' true' } ] },
+  { indent: 1, content: [{ t: 'prop', v: 'available' }, { t: 'op', v: ':' }, { t: 'kw', v: ' true' }] },
   { indent: 0, content: [{ t: 'plain', v: '};' }] },
 ]
 
@@ -66,8 +66,8 @@ export default function Hero() {
             >
               View Projects
             </a>
-            <a href="/Resume/Nancy.pdf" download className="btn btn-ghost cursor-hover">
-              <Download size={16} /> Download Resume
+            <a href={`${import.meta.env.BASE_URL}Resume/Nancy_Resume.pdf`} download>
+              Download Resume
             </a>
             <a
               href="#contact"
